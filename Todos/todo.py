@@ -1,25 +1,22 @@
-from functions import get_todos, write_todos # this is local modules we created
-# import functions - this is another way to get functions from function module
-import time # these are standard modules created by python developers itself
+from functions import get_todos, write_todos
+
+import time
 now= time.strftime("%b %d %Y %H:%M:%S")
 print("It is", now)
-#print(help(write_todos))  - this is used to print the doc text we arite for the definition of write_todos() function
-
-
 
 
 while True:
     user_action=input( 'type add, show,edit,complete or exit:')
 
-    if user_action.startswith('add'):   # check if user_action is 'add'
-        todo= user_action[4:] + '\n'  # this displays the string from the 4th position in the list
+    if user_action.startswith('add'):
+        todo= user_action[4:] + '\n'
 
 
-        todos=get_todos() # this is similar to get_todos("todos.txt") but we already assign this file to filepath variable in  user defined function
+        todos=get_todos()
         todos.append(todo)
 
 
-        write_todos(todos)  # if  we use the second way of importing the function, we need to replace this line of code by functions.write_todos()
+        write_todos(todos)
 
 
     elif user_action.startswith('show'):
