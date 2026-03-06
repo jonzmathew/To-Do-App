@@ -1,3 +1,6 @@
+A Python-based To-Do List application with both Command Line Interface (CLI) and Graphical User Interface (GUI). The project allows users to add, edit, view, and complete tasks while storing data in a text file. It demonstrates Python concepts such as file handling, modular programming, and GUI development using FreeSimpleGUI.
+
+
 📝 Python To-Do List Application (CLI + GUI)
 📌 Project Overview
 
